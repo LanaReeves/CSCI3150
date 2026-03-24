@@ -14,7 +14,55 @@ div#formcol1 {
 	width: 100%;
 }
 
+fieldset {
+    background-color: #eeeded;
+	border: 2px solid #666666;
+	
+}
 
+
+
+#formcol1 li {   
+	list-style:none;
+}
+
+
+label {
+	margin-right: .3em;
+	width: 7em;
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+	text-align: right;
+}
+
+.submit-button {
+  margin-left: .1em;
+}
+
+#multchoice label {
+	width: 4em;
+	text-align: left;
+}
+
+legend {
+	font-weight: bold;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+input {
+	border: 1.5px solid #666666;
+
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+color: #FFF !important;
+background-color: #e57373 !important;}
+
+
+#formcol1 input.reqfield {
+	background: #fff3cd;
+}
 
 /* end of form css */
-	
