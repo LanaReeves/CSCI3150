@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./full_nav.css" />
+  </head>
+  <body>
+    <div class="card">
+      <nav>
+        <a href="#">Routt County Emergency Alerts</a>
+        <a href="#">Community Connect</a>
+        <a href="#">Fees</a>
+        <div class="nav-dropdown">
+          <div class="nav-dropdown-header">
+            <a href="#">Fire Prevention</a>
+            <button class="toggle-btn" onclick="toggleDropdown(this)">+</button>
+          </div>
+          <div class="nav-submenu" style="display: none">
+            <a href="#">Downloadable Permits and Forms</a>
+          </div>
+        </div>
+        <a href="#">Fire Suppression</a>
+        <a href="#">Wildfire</a>
+        <a href="#">Open Burn/Fire Pits</a>
+        <a href="#">Safety Education</a>
+        <a href="#">Stations</a>
+        <a href="#">Fireworks</a>
+        <a href="#">Ride Along Program</a>
+        <a href="#">Meet the Fire Rescue Team</a>
+        <a href="#">Community Events</a>
+      </nav>
+
+      <main>
+        <h1>Fire Prevention</h1>
+
+        <div class="intro">
+          <div class="intro-text">
+            <p>
+              Our mission is to provide a fire safe community for the residents
+              and visitors to the City of Steamboat Springs by the progressive
+              reduction of fire and life safety hazards through continued
+              education, awareness and prevention while insuring genuine
+              customer service.
+            </p>
+            <p>
+              To assist in coordinating Construction Site Management with Local
+              Events, consult the
+              <a class="paragraph-link" href="https://www.steamboatsprings.net"
+                >Steamboat Springs Chamber calendar of events</a
+              >.
+            </p>
+          </div>
+          <div class="intro-img">
+            <img
+              alt="Fire Prevention team"
+              src="https://www.steamboatsprings.net/ImageRepository/Document?documentID=27410"
+            />
+          </div>
+        </div>
+
+        <h2>Contact Us</h2>
+
+        <div class="contacts">
+          <div class="contact">
+            <p class="contact-name">Doug Shaffer</p>
+            <p class="contact-title">Fire Marshal</p>
+            <a href="mailto:dshaffer@steamboatsprings.net"
+              >Email Doug Shaffer</a
+            >
+          </div>
+          <div class="contact">
+            <p class="contact-name">Mike Middleton</p>
+            <p class="contact-title">Deputy Fire Marshal</p>
+            <a href="mailto:mmiddleton@steamboatsprings.net"
+              >Email Mike Middleton</a
+            >
+          </div>
+          <div class="contact">
+            <p class="contact-name">Shannon Yaconiello</p>
+            <p class="contact-title">Fire Admin Assistant</p>
+            <a href="mailto:syaconiello@steamboatsprings.net"
+              >Email Shannon Yaconiello</a
+            >
+          </div>
+        </div>
+
+        <div class="address-block">
+          <p class="address-heading">Fire Prevention</p>
+          <p><strong>Physical Address</strong></p>
+          <p>2600 Pine Grove Road</p>
+          <p>Steamboat Springs, CO 80487</p>
+          <p class="phone">Phone: <a href="tel:9708718216">970-871-8216</a></p>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      function toggleDropdown(btn) {
+        const submenu = btn
+          .closest(".nav-dropdown")
+          .querySelector(".nav-submenu");
+        const isOpen = submenu.style.display !== "none";
+        submenu.style.display = isOpen ? "none" : "block";
+        btn.textContent = isOpen ? "+" : "−";
+      }
+    </script>
+  </body>
+</html>
